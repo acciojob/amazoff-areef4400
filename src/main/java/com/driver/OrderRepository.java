@@ -39,23 +39,31 @@ public class OrderRepository {
 
     public Order findOrderById(String orderId){
         // your code here
+        return new Order("455", "bdjdhf");
     }
 
     public DeliveryPartner findPartnerById(String partnerId){
         // your code here
+        return new DeliveryPartner("tt");
     }
 
     public Integer findOrderCountByPartnerId(String partnerId){
         // your code here
+        return 0;
     }
 
     public List<String> findOrdersByPartnerId(String partnerId){
         // your code here
+        List<String> al = new ArrayList<>();
+        return al;
     }
 
     public List<String> findAllOrders(){
         // your code here
         // return list of all orders
+
+                List<String> al = new ArrayList<>();
+        return al;
     }
 
     public void deletePartner(String partnerId){
@@ -66,18 +74,22 @@ public class OrderRepository {
     public void deleteOrder(String orderId){
         // your code here
         // delete order by ID
+
     }
 
     public Integer findCountOfUnassignedOrders(){
         // your code here
+        return 0;
     }
 
     public Integer findOrdersLeftAfterGivenTimeByPartnerId(String timeString, String partnerId){
         // your code here
+        return 0;
     }
 
     public String findLastDeliveryTimeByPartnerId(String partnerId){
         // your code here
         // code should return string in format HH:MM
+        return "";
     }
 }
