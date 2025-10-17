@@ -1,7 +1,9 @@
-package com.driver;
+package com.driver.Repository;
 
 import java.util.*;
 
+import com.driver.Model.DeliveryPartner;
+import com.driver.Model.Order;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -20,12 +22,13 @@ public class OrderRepository {
     }
 
     public void saveOrder(Order order){
-        // your code here
+        orderMap.put(order.getId(), order);
     }
 
     public void savePartner(String partnerId){
         // your code here
         // create a new partner with given partnerId and save it
+//        partnerMap.put(partnerId, )
     }
 
     public void saveOrderPartnerMap(String orderId, String partnerId){
